@@ -1,59 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Slab&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family:sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
   margin: 25px;
   color: #222;
-  background-color: #f5f5f5;
+  background-color: #261C2C;
+}
+
+.container {
+  text-align: center;
 }
 
 h1 {
+  color: #fff;
+  margin: 0;
   font-weight: bold;
-  
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0;
 }
 
 p {
   max-width: 900px;
+  color: #fff;
+  margin: 0;
+}
+
+div > p {
+  padding: 3px;
 }
 
 form {
-  margin-bottom: 25px;
+  margin: 25px 0;
   padding: 15px;
-  background-color: #87D37C;
+  background-color: #fff;
   display: inline-block;
-  width: 100%;
-  max-width: 340px;
+  min-width: 500px;
   border-radius: 5px;
 }
 
+hr {
+  width: 60%;
+}
+
 input {
-  display: block;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 16px;
 }
 
+input[type=text] {
+  display: block;
+  width: 80%;
+  padding: 5px;
+  margin: 1.2em auto;
+  border: 1px solid lightgrey;
+}
+
 input[type=submit] {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: #E4F1FE;
-  border: 1px solid grey;
-  box-shadow: 2px 2px #999;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 1em 2em;
+  border: none;
+  background-color: #261C2C;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
 input[type=submit]:hover {
-  background-color: #FFFEC4;
+  background-color: #3E2C41;
 }
 
 code {
+  color: #222;
   font-family: monospace;
   font-size: 1.2em;
   background-color: #FFFEC4;
   padding: 2px;
+}
+
+form, input[type=submit] {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
